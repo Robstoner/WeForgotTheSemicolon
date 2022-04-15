@@ -1,12 +1,19 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <?php if ($active == 'home-page') { ?> <title>Home</title> <?php } ?>
+    <?php if ($active == 'consum') { ?> <title>Consum</title> <?php } ?>
+    <?php if ($active == 'facturi') { ?> <title>Facturi</title> <?php } ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="../css/login-signup.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 </head>
 
 <body>
@@ -23,4 +30,3 @@
 
 
     </div>
-</body>

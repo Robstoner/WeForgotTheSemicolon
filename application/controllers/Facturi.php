@@ -15,4 +15,15 @@ class Facturi extends CI_Controller {
         
     }
 
+    public function add()
+    {
+        $data['active'] = 'facturi';
+        $this->load->view('add-factura.php', $data);
+    }
+
+    public function add_factura()
+    {
+        
+    }
+
 }
