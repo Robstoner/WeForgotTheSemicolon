@@ -14,7 +14,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <!-- partial:index.partial.html -->
     <div class="login-form">
         <form action="<?php base_url();?>login/login_engine" method="POST">
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
             <div class="content">
                 <div class="input-field">
                     
