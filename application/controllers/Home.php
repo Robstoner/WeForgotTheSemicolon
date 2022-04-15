@@ -7,16 +7,9 @@ class Login extends CI_Controller {
     {
 
 
-        $this->load->view('login');
-    }
-
-    public function signup()
-    {
-
-
-        $this->load->view('signup');
+        $this->load->view('home-page');
     }
 
 
-
+    
 }
