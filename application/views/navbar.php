@@ -1,5 +1,6 @@
 <html>
 
+<<<<<<< HEAD
 <head>
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,3 +25,7 @@
 
     </div>
 </body>
+=======
+        </div>
+    
+>>>>>>> 01f2691ff3769d60b040a5f5744f190e42e2e060
