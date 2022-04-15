@@ -14,13 +14,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
     <div class="login-form">
 
-        <?php
-        if ($this->session->userdata('login_error') == TRUE) {
-            echo "<div>
-                  Eroare! Username-ul nu exista!
-                </div>";
-        }
-        ?>
+        <?php if ($this->session->userdata('login_error') == TRUE) { ?>
+            <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Eroare! Username-ul nu exista!
+            </div>";
+        <?php } ?>
 
         <?php
         if ($this->session->userdata('wrong_pass') == TRUE) {

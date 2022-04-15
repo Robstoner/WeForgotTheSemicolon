@@ -1,24 +1,29 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Login extends CI_Controller
+{
 
     public function index()
     {
-        
+
         if ($this->session->userdata('logged')) {
             redirect('home');
-        }
-        else {
+        } else {
             $this->load->view('login');
         }
-        
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('logged');
+        redirect('login');
     }
 
     public function login_engine()
     {
         $username = $this->input->post('username', TRUE);
-		$password = $this->input->post('password', TRUE);
+        $password = $this->input->post('password', TRUE);
 
         $this->db->select('*');
         $this->db->from('users');
@@ -32,8 +37,7 @@ class Login extends CI_Controller {
             $this->session->set_flashdata($sess);
 
             redirect('login');
-        }
-        else {
+        } else {
             $get = $get->row();
 
             $hash = $get->password;
@@ -49,8 +53,7 @@ class Login extends CI_Controller {
                 $this->session->set_userdata($sess);
 
                 redirect('home');
-            }
-            else {
+            } else {
                 $sess = array(
                     'wrong_pass' => TRUE
                 );
@@ -71,11 +74,5 @@ class Login extends CI_Controller {
 
     public function signup_engine()
     {
-
-
-
     }
-
-
-
 }
