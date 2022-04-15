@@ -12,7 +12,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 <body>
-    <!-- partial:index.partial.html -->
     <div class="login-form">
 
         <?php
@@ -53,10 +52,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="action">
 
                 <a href="<?php echo base_url() . 'login/signup'; ?>">
-                    <button type="button">Register</button>
+                    <button class="btn"  type="button">Register</button>
                 </a>
 
-                <button type="submit">Sign in</button>
+                <button class="btn" type="submit">Sign in</button>
 
             </div>
 
