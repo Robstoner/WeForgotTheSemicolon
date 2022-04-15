@@ -14,25 +14,25 @@
 
                 <div class="input-field">
 
-                    <input name="" type="number" step="0.01" class="form-control" placeholder="Name" autocomplete="nope">
+                    <input name="apa" type="number" step="0.01" class="form-control" placeholder="Apa" autocomplete="nope">
 
                 </div>
 
                 <div class="input-field">
 
-                    <input name="email" type="email" class="form-control" placeholder="Email" autocomplete="nope">
+                    <input name="curent" type="number" step="0.01" class="form-control" placeholder="Curent" autocomplete="nope">
 
                 </div>
 
                 <div class="input-field">
 
-                    <input name="phone" type="text" class="form-control" placeholder="Phone" autocomplete="nope">
+                    <input name="net" type="number" step="0.01" class="form-control" placeholder="Net" autocomplete="nope">
 
                 </div>
 
                 <div class="input-field">
 
-                    <input name="password" type="password" class="form-control" placeholder="Password" autocomplete="new-password">
+                    <input name="altele" type="number" step="0.01" class="form-control" placeholder="Altele" autocomplete="nope">
 
                 </div>
             </div>
@@ -41,10 +41,10 @@
             <div class="action">
 
                 <a href="<?php echo base_url() . 'Facturi'; ?>">
-                    <button class="btn" type="button">Back to Facturi</button>
+                    <button class="btn" type="button">Inapoi la Facturi</button>
                 </a>
 
-                <button class="btn" type="submit">Sign up</button>
+                <button class="btn" type="submit">Adaugare</button>
 
             </div>
 
