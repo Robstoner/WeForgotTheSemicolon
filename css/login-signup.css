@@ -3,7 +3,7 @@ body {
 }
 
 .login-form {
-  background: #333;
+  background: #fff;
   width: 550px;
   margin: 100px auto;
   display: -webkit-box;
@@ -155,4 +155,9 @@ body {
 /* When moving the mouse over the close button */
 .closebtn:hover {
   color: black;
+}
+
+.container{
+  margin-left: 40%;
+  margin-top: 40%;
 }
