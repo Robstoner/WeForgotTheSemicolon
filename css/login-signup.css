@@ -167,3 +167,8 @@ body {
   margin-left: 40%;
   margin-top: 40%;
 }
+
+.no-cont{
+  position:relative;
+  left:40px;
+}
