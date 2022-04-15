@@ -4,6 +4,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Login extends CI_Controller
 {
 
+    public function __construct()
+	{
+		parent::__construct();
+        $this->load->model('users_model');
+    }
+
     public function index()
     {
 
@@ -74,5 +80,31 @@ class Login extends CI_Controller
 
     public function signup_engine()
     {
+        $username = $this->input->post('username', TRUE);
+        $password = $this->input->post('password', TRUE);
+        $email = $this->input->post('email', TRUE);
+        $phone = $this->input->post('phone', TRUE);
+        $name = $this->input->post('name', TRUE);
+
+        $ins = $this->users_model->signup_add($username, $name, $password, $phone, $email);
+        
+        if ($ins) {
+            $sess = array(
+                'signup_done' => TRUE
+            );
+
+            $this->session->set_flashdata($sess);
+
+            redirect('login');
+        }
+        else {
+            $sess = array(
+                'signup_failed' => TRUE
+            );
+
+            $this->session->set_flashdata($sess);
+
+            redirect('login/signup');
+        }
     }
 }
