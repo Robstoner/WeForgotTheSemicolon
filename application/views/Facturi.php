@@ -10,8 +10,8 @@
     <body>
         <div class="navbar">
             
-            <a class="active" href="home">Home</a>
-            <a href="facturi">Facturi</a>
+            <a href="home">Home</a>
+            <a class="active" href="facturi">Facturi</a>
             <a href="consum">Consum</a>
             <div>
                 <img src="../css/pwppeportofel_PNG.png" class="img-fluid"> 

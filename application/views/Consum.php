@@ -10,10 +10,10 @@
     <body>
         <div class="navbar">
             
-            <a class="active" href="home">Home</a>
+            <a href="home">Home</a>
             <a href="facturi">Facturi</a>
-            <a href="consum">Consum</a>
-            <div>
+            <a class="active" href="consum">Consum</a>
+            <div class="box small">
                 <img src="../css/pwppeportofel_PNG.png" class="img-fluid"> 
             </div>
 
