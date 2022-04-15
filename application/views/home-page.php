@@ -4,9 +4,10 @@
 
 
         
+    <div class="below-navbar" id="myChart"></div>
 
+</body>
 
+<script src="../js\piechart.js"></script>
 
-
-    </body>
 </html>
