@@ -45,4 +45,19 @@ class Everything_model extends CI_Model
         return ($this->db->affected_rows() != 1) ? false : true;
     }
 
+    public function consum_add($suma)
+    {
+        $now = new DateTime();
+        $date = $now->format('Y.m');
+        $set = array(
+            'data' => $date,
+            'user_id' => $this->session->userdata('user_id'),
+            'suma' => $suma
+        );
+
+        $this->db->insert('consum', $set);
+
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
 }

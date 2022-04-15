@@ -20,7 +20,7 @@
             </div>
             <div class="input-field">
 
-                <input name="suma" type="number" step="0.01" class="form-control" placeholder="Suma platita in leip" autocomplete="nope">
+                <input name="suma" type="number" step="0.01" class="form-control" placeholder="Suma platita in lei" autocomplete="nope">
 
             </div>
         </div>
