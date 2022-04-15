@@ -5,9 +5,9 @@ class Consum extends CI_Controller {
 
     public function index()
     {
-
+        $data['active']='consum';
         if ($this->session->userdata('logged', TRUE)) {
-            $this->load->view('Consum');
+            $this->load->view('consum', $data);
         }
         else {
             redirect('login');
