@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Users_model extends CI_Model 
+class Everything_model extends CI_Model 
 {
 
     public function signup_add($username, $name, $password, $phone, $email)
@@ -25,6 +25,22 @@ class Users_model extends CI_Model
         );
 
         $this->db->insert('users', $set);
+
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function factura_add($tip, $suma)
+    {
+        $now = new DateTime();
+        $date = $now->format('Y.m');
+        $set = array(
+            'data' => $date,
+            'user_id' => $this->session->userdata('user_id'),
+            'tip' => $tip,
+            'suma' => $suma
+        );
+
+        $this->db->insert('facturi', $set);
 
         return ($this->db->affected_rows() != 1) ? false : true;
     }

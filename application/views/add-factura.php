@@ -1,57 +1,46 @@
 <?php $this->load->view('navbar.php'); ?>
 
-    <div class="login-form" style="margin: 25px auto">
+<div class="login-form" style="margin: 25px auto">
 
-        <form method="POST" action="<?php echo base_url() . 'facturi/add_factura'; ?>">
-            <h1>Adaugare Facturi</h1>
-            <div class="content">
+    <form method="POST" action="<?php echo base_url() . 'facturi/add_factura'; ?>">
+        <h1>Adaugare Facturi</h1>
+        <div class="content">
 
-                <div class="input-field">
+            <div class="input-field">
 
-                    <input name="gaze" type="number" step="0.01" class="form-control" placeholder="Gaze" autocomplete="nope">
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="apa" type="number" step="0.01" class="form-control" placeholder="Apa" autocomplete="nope">
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="curent" type="number" step="0.01" class="form-control" placeholder="Curent" autocomplete="nope">
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="net" type="number" step="0.01" class="form-control" placeholder="Net" autocomplete="nope">
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="altele" type="number" step="0.01" class="form-control" placeholder="Altele" autocomplete="nope">
-
-                </div>
-            </div>
-
-
-            <div class="action">
-
-                <a href="<?php echo base_url() . 'Facturi'; ?>">
-                    <button class="btn" type="button">Inapoi la Facturi</button>
-                </a>
-
-                <button class="btn" type="submit">Adaugare</button>
+                <label for="facturi_type">Alege un tip de factura:</label>
+                <select name="facturi_type" id="facturi_type">
+                    <option value="Gaze">Gaze</option>
+                    <option value="Apa">Apa</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Curent">Curent</option>
+                    <option value="Altele">Altele</option>
+                </select>
 
             </div>
+            <div class="input-field">
 
-        </form>
+                <input name="suma" type="number" step="0.01" class="form-control" placeholder="Suma platita in leip" autocomplete="nope">
 
-    </div>
-    <script src="./script.js"></script>
+            </div>
+        </div>
+
+
+        <div class="action">
+
+            <a href="<?php echo base_url() . 'Facturi'; ?>">
+                <button class="btn" type="button">Inapoi la Facturi</button>
+            </a>
+
+            <button class="btn" type="submit">Adaugare</button>
+
+        </div>
+
+    </form>
+
+</div>
+<script src="./script.js"></script>
 
 </body>
+
 </html>
