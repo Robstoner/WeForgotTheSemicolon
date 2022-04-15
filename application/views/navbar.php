@@ -22,9 +22,9 @@
             <img src="../css/pwppeportofel_PNG.png" class="img-fluid">
         </div> -->
 
-        <a <?php if ($active == 'home-page') { ?>class="active" <?php } ?> href="home">Home</a>
-        <a <?php if ($active == 'facturi') { ?>class="active" <?php } ?> href="facturi">Facturi</a>
-        <a <?php if ($active == 'consum') { ?>class="active" <?php } ?> href="consum">Consum</a>
+        <a <?php if ($active == 'home-page') { ?>class="active" <?php } ?> href="<?php echo base_url() . 'home'; ?>">Home</a>
+        <a <?php if ($active == 'facturi') { ?>class="active" <?php } ?> href="<?php echo base_url() . 'facturi'; ?>">Facturi</a>
+        <a <?php if ($active == 'consum') { ?>class="active" <?php } ?> href="<?php echo base_url() . 'consum'; ?>">Consum</a>
 
         <a class="right" href="<?php echo base_url() . 'login/logout' ?>">Log out</a>
 
