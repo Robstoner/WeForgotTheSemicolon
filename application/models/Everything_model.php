@@ -60,14 +60,15 @@ class Everything_model extends CI_Model
         return ($this->db->affected_rows() != 1) ? false : true;
     }
 
-    public function factura_poza_add($path)
+    public function factura_poza_add($path, $filename)
     {
         $now = new DateTime();
         $date = $now->format('Y.m');
         $set = array(
             'data' => $date,
             'user_id' => $this->session->userdata('user_id'),
-            'path' => $path
+            'path' => $path,
+            'filename' => $filename
         );
 
         $this->db->insert('poze', $set);

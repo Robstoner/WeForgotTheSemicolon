@@ -9,6 +9,8 @@
 </div>
 
 
+
+
 <div class="canvas-cont">
     <canvas class="pie" id="pie_chart"></canvas>
 </div>

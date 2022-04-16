@@ -3,7 +3,7 @@
 <div class="login-form" style="margin: 25px auto">
 
     <form class="d-bl" method="POST" action="<?php echo base_url() . 'facturi/add_factura'; ?>">
-        <h1 class="d-bl">Adaugare Facturi</h1>
+        <h1 class="d-bl">Adaugare Plata</h1>
         <div class="content d-bl">
 
             <div class="input-field d-bl">

@@ -15,6 +15,7 @@ class Facturi extends CI_Controller
     public function index()
     {
         $data['active'] = 'facturi';
+
         if ($this->session->userdata('logged', TRUE)) {
             $this->load->view('facturi', $data);
         } else {
@@ -65,10 +66,10 @@ class Facturi extends CI_Controller
     {
 
         $config['upload_path']          = './uploads/' . $this->session->userdata('user_id') . '/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        $config['max_size']             = 1000;
-        $config['max_width']            = 1024;
-        $config['max_height']           = 1024;
+        $config['allowed_types']        = 'gif|jpg|png|pdf';
+        $config['max_size']             = 5120;
+        $config['max_width']            = 5000;
+        $config['max_height']           = 5000;
 
         if (!is_dir('./uploads/' . $this->session->userdata('user_id') . '/')) {
             mkdir('./uploads/' . $this->session->userdata('user_id'), 0777, true);
@@ -89,11 +90,23 @@ class Facturi extends CI_Controller
 
             $path = $data['upload_data']['full_path'];
 
-            $this->everything_model->factura_poza_add($path);
+            $filename = $data['upload_data']['file_name'];
+
+            $this->everything_model->factura_poza_add($path, $filename);
 
             $data['active'] = 'facturi';
 
             redirect('facturi');
         }
+    }
+
+    public function download($id)
+    {
+        $this->db->select('*');
+        $this->db->from('poze');
+        $this->db->where('id', $id);
+        $get = $this->db->get()->row();
+
+        force_download($get->path, NULL);
     }
 }

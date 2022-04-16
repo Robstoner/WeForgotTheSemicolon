@@ -3,11 +3,11 @@
 <div class="login-form d-bl">
 
 
-    <?php echo json_encode($error) ? $error : ''; ?>
+    <?php echo $error ? json_encode($error) : ''; ?>
 
     <form class="d-bl" method="POST" action="<?php echo base_url() . 'facturi/add_photo'; ?>" enctype="multipart/form-data">
 
-        <h1 class="d-bl">Adauga poze facturi</h1>
+        <h1 class="d-bl">Adauga poze/pdf facturi</h1>
         <div class="input-field d-bl">
             <input class="d-bl" type="file" name="userfile" size="20" />
         </div>

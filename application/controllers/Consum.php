@@ -12,6 +12,16 @@ class Consum extends CI_Controller {
     public function index()
     {
         $data['active']='consum';
+
+        $user_id = $this->session->userdata('user_id');
+
+        $this->db->select('*');
+        $this->db->from('poze');
+        $this->db->where('user_id', $user_id);
+        $get = $this->db->get()->result();
+
+        $data['poze_facturi'] = $get;
+
         if ($this->session->userdata('logged', TRUE)) {
             $this->load->view('consum', $data);
         }
