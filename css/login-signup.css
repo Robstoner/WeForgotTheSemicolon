@@ -9,19 +9,15 @@ body {
 }
 
 .adaugare{
-  margin-left: 18px;
-  margin-right: 18px;
+
   width: 10%;
   border: none;
-  padding: 5px;
-  cursor: pointer;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 0.2px;
   outline: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  position: relative;
+  margin-right: 110%;
+
 }
 
 .d-bl {
@@ -109,6 +105,23 @@ body {
 .btn {
   margin-left: 18px;
   margin-right: 18px;
+  width: 100%;
+  border: none;
+  padding: 25px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #5b5b5c;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn2 {
+  margin-top: 10%;
+  margin-left: 14.8%;
   width: 100%;
   border: none;
   padding: 25px;
