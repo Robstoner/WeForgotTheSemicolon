@@ -11,7 +11,8 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
     <link rel="stylesheet" href="../css/login-signup.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
 
 
 </head>
@@ -27,7 +28,7 @@
         <a <?php if ($active == 'consum') { ?>class="active" <?php } ?> href="<?php echo base_url() . 'consum'; ?>">Consum</a>
 
         <a class="right" href="<?php echo base_url() . 'login/logout' ?>">Log out</a>
-
-
+        
+        
     </div>
 

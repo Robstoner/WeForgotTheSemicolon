@@ -50,3 +50,14 @@ img {
 .navbar a.right {
   float: right;
 }
+
+.canvas-cont{
+  width:700px ;
+  height:700px ;
+  margin: 0 auto;
+
+}
+
+.pie{
+  position: relative; 
+}
