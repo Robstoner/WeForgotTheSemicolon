@@ -90,7 +90,7 @@ h2 {
 
 .dwn {
   border: none;
-  padding: 20px;
+  padding: 25px;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   background: #202324;
@@ -99,10 +99,4 @@ h2 {
   outline: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-a:hover{
-  color:#3CB878;
-  border: 1px solid #3CB878;
-  ;
 }

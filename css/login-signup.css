@@ -238,14 +238,15 @@ img {
   width: 50%;
  }
 
- .pie-legend {
-  /* margin-left:1100px;
-  margin-top:-600px; */
-  color:#202324;
-  margin-top:-100px;
-  margin-left:100px;
+.terog{
+  position:absolute;
+  top:30%;
+  right:5%;
 }
 
+p{
+  color:#202324;
+}
 
 /*
 

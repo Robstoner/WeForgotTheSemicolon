@@ -11,9 +11,21 @@
         <canvas class="pie" id="pie_chart"></canvas>
     </div>
 
-    <p class="pie-legend">CAS - Asigurari sociale.</p>
-    <p class="pie-legend">CASS - Asigurari sociale de sanatate.</p>
-    <p class="pie-legend">IV - Impozit pe venit</p>
+
+    <div class="terog">
+
+        <p>CAS - Asigurari sociale.</p>
+        <p>CASS - Asigurari sociale de sanatate.</p>
+        <p>IV - Impozit pe venit</p>
+
+    </div>
+
+
+
+
+
+
+    
 </div>
 
 
