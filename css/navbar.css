@@ -5,14 +5,14 @@ body {
 }
 
 .navbar {
-  background-color: rgb(38, 42, 43);
+  background-color: #202324;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 550;
   overflow: hidden;
 }
 
 .navbar a {
-  background-color: rgb(38, 42, 43);
+  background-color: #202324;
   float: left;
   color: #f2f2f2;
   text-align: start;
@@ -50,7 +50,8 @@ body {
 .canvas-cont{
   width:700px ;
   height:700px ;
-  margin: 0 auto;
+  margin: 0 auto ;
+  margin-left: 200px;
 
 }
 

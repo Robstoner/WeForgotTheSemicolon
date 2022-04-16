@@ -19,14 +19,13 @@
 
 <body>
     <div class="navbar">
-        <!-- <div>
-            <img src="../css/pwppeportofel_PNG.png" class="img-fluid">
-        </div> -->
-
+        
+        
+        
         <a class="<?php if ($active == 'home-page') { ?>active <?php } ?>" href="<?php echo base_url() . 'home'; ?>">Home</a>
         <a class="<?php if ($active == 'facturi') { ?>active <?php } ?>" href="<?php echo base_url() . 'facturi'; ?>">Adaugare Plati</a>
-        <a class="<?php if ($active == 'consum') { ?>active <?php } ?>" href="<?php echo base_url() . 'consum'; ?>">Istoric facturi</a>
-
+        <a class="<?php if ($active == 'consum') { ?>active <?php } ?>" href="<?php echo base_url() . 'consum'; ?>">Istoric Facturi</a>
+        
         <a class="right" href="<?php echo base_url() . 'login/logout' ?>">Log out</a>
         
         
