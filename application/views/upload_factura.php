@@ -1,11 +1,11 @@
 <?php $this->load->view('navbar.php'); ?>
 
-<div class="login-form d-bl">
+<div class="login-form d-bl" style="margin: 25px auto">
 
 
     <?php echo $error ? json_encode($error) : ''; ?>
 
-    <form class="d-bl" method="POST" action="<?php echo base_url() . 'facturi/add_photo'; ?>" enctype="multipart/form-data">
+    <form class="d-bl" method="POST" action="<?php echo base_url() . 'facturi/add_photo'; ?>" enctype="multipart/form-data" >
 
         <h1 class="d-bl">Adauga poze/pdf facturi</h1>
         <div class="input-field d-bl">

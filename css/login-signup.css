@@ -1,5 +1,5 @@
 * {
-  background-color: #307ab8;
+  background-color: #fff;
   scrollbar-color: #454a4d #202324;
   color: #fff;
 }
@@ -121,14 +121,29 @@ body {
 
 .btn2 {
   margin-top: 10%;
-  margin-left: 14.8%;
-  width: 100%;
+  width: 114.5%;
   border: none;
   padding: 25px;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
   text-transform: uppercase;
-  background: #5b5b5c;
+  background: #202324;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn3 {
+  margin-top: 10%;
+  width: 113%;
+  border: none;
+  padding: 25px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #202324;
   color: #ffffff;
   letter-spacing: 0.2px;
   outline: 0;
@@ -222,6 +237,7 @@ img {
   margin-right: auto;
   width: 50%;
  }
+
 
 
 

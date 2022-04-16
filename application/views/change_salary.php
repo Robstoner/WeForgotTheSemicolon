@@ -1,6 +1,6 @@
 <?php $this->load->view('navbar'); ?>
 
-<div class = "login-form">
+<div class = "login-form" style="margin-top: 10px">
     <form class="d-bl" method="POST" action="<?php echo base_url() . 'login/change_sal_backend'; ?>">
         <h1 class="d-bl">Schimbare Salariu</h1>
         <div class="content d-bl">
