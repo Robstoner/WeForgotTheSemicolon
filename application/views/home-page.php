@@ -10,6 +10,10 @@
     <div class="canvas-cont">
         <canvas class="pie" id="pie_chart"></canvas>
     </div>
+
+    <p class="pie-legend">CAS - Asigurari sociale.</p>
+    <p class="pie-legend">CASS - Asigurari sociale de sanatate.</p>
+    <p class="pie-legend">IV - Impozit pe venit</p>
 </div>
 
 
@@ -21,7 +25,7 @@
 
 <script>
     const data = {
-        labels: ["CAS", "Cass", "IV", "Facturi", "Cheltuieli", "Savings"],
+        labels: ["CAS", "CASS", "IV", "Facturi", "Cheltuieli", "Savings"],
         datasets: [{
             label: "Impartire (lei)",
             backgroundColor: ["#9e32bf", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#03c2fc"],
