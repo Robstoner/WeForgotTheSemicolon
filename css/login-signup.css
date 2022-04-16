@@ -167,6 +167,7 @@ body {
 .closebtn {
   margin-left: 15px;
   color: white;
+  background-color: inherit;
   font-weight: bold;
   float: right;
   font-size: 22px;

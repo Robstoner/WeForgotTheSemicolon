@@ -75,4 +75,32 @@ class Everything_model extends CI_Model
         return ($this->db->affected_rows() != 1) ? false : true;
     }
 
+    public function check_first_day()
+    {
+        $now = new DateTime();
+        $day = $now->format('d');
+
+        if ($day == '1') {
+            
+            $this->db->select('*');
+            $this->db->from('users');
+            $get = $this->db->get()->result();
+
+            $date = $now->format('Y.m');
+
+            foreach ($get as $user) {
+
+                $set = array(
+                    'user_id' => $user->id,
+                    'salariu' => $user->salariu,
+                    'data' => $date
+                );
+
+                $this->db->insert('salariu', $set);
+
+            }
+
+        }
+    }
+
 }
