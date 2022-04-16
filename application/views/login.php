@@ -14,55 +14,51 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
     <div class="login-form">
 
-
-
-
-
-
-
-
         <form method="POST" action="<?php echo base_url() . 'login/login_engine'; ?>">
 
             <h1>Login</h1>
             <div class="content">
 
-            
+
                 <?php if ($this->session->userdata('wrong_pass') == TRUE) { ?>
                     <div class="alert">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        Error! Wrong password.
+                        Eroare! Parola gresita.
                     </div>
                 <?php } ?>
 
                 <?php if ($this->session->userdata('login_error') == TRUE) { ?>
                     <div class="alert">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        Error! Username doesn't exist.
+                        Eroare! Username-ul nu exista.
                     </div>
                 <?php } ?>
 
                 <?php if ($this->session->userdata('signup_done') == TRUE) { ?>
                     <div class="alert-success">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        Signup success! Please login to your account.
+                        Sign up reusit! Va rugam conectati-va in cont.
                     </div>
                 <?php } ?>
 
 
                 <div class="input-field">
 
-                    <input name="username" type="text" class="form-control" placeholder="username" autocomplete="nope">
+                    <input name="username" type="text" class="form-control" placeholder="  Username" autocomplete="nope" required>
 
                 </div>
 
                 <div class="input-field">
 
-                    <input name="password" type="password" class="form-control" placeholder="Password" autocomplete="new-password">
+                    <input name="password" type="password" class="form-control" placeholder="  Parola" autocomplete="new-password" required>
 
                 </div>
-                <a href="#" class="link">Forgot Your Password?</a>
+                <a href="<?php echo base_url() . 'login/forgot_pass'; ?>" class="link">Ai uitat parola?</a>
             </div>
-
+            
+            <div class="no-cont">
+                <p>Nu aveti cont?</p>
+            </div>
 
             <div class="action">
 

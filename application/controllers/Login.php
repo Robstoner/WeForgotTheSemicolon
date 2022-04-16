@@ -107,4 +107,9 @@ class Login extends CI_Controller
             redirect('login/signup');
         }
     }
+
+    public function forgot_pass(){
+        
+        $this->load->view('forgot-pass');
+    }
 }
