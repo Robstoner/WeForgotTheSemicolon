@@ -1,5 +1,5 @@
 * {
-  background-color: #181a1b;
+  background-color: #ace5ee;
   scrollbar-color: #454a4d #202324;
   color: #fff;
 }
@@ -31,7 +31,7 @@ body {
 .login-form {
   background-color: rgb(38, 42, 43);
   width: 550px;
-  margin: 100px auto;
+  margin: 0px auto;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -42,7 +42,7 @@ body {
 }
 
 .login-form h1 {
-  padding: 30px 30px 0 30px;
+  padding: 0px 30px 0 30px;
   font-weight: 400;
   font-size: 50px;
 }
@@ -96,7 +96,6 @@ body {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 30px;
 }
 
 .login-form .action {
@@ -129,14 +128,14 @@ body {
 }
 
 .login-form .action button:nth-child(2) {
-  background: #2d3b55;
+  background: #2F925E;
   color: #fff;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 4px;
 }
 
 .login-form .action button:nth-child(2):hover {
-  background: #3c4d6d;
+  background: #3CB878;
 }
 
 /* The alert message box */
@@ -187,8 +186,8 @@ body {
 }
 
 .no-cont{
-  position:relative;
-  left:40px;
+  position: relative;
+  margin-left : 40px;
 }
 
 input:invalid {
@@ -200,3 +199,24 @@ input:valid {
   border: 2px solid rgb(58, 55, 55);
   position: relative;
 }
+
+img {
+  padding: 0;
+  max-width: 12%;
+  max-height: 12%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+
+
+
+/*
+
+#3CB878
+#35A169
+#2F925E
+#635F5A
+
+*/

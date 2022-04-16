@@ -12,6 +12,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 <body>
+
+    <img src="../css/pwppeportofel_PNG2.png">
+
     <div class="login-form" style="margin: 25px auto">
 
         <form class="d-bl" method="POST" action="<?php echo base_url() . 'login/signup_engine'; ?>">

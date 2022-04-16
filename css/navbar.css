@@ -31,10 +31,7 @@ body {
   color: white;
 }
 
-img {
-  max-width: 200%;
-  max-height: 150%;
-}
+
 
 .box-small {
   width: 60px;
@@ -60,4 +57,6 @@ img {
 .pie{
   position: relative; 
 }
+
+
 

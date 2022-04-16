@@ -12,7 +12,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 <body>
-    <div class="login-form">
+
+    
+
+    
+    
+    <img src="../css/pwppeportofel_PNG2.png">
+    
+    <div class="login-form" style="margin: 25px auto">
+        
 
         <form class="d-bl" method="POST" action="<?php echo base_url() . 'login/login_engine'; ?>">
 
@@ -74,5 +82,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
     </div>
     <script src="./script.js"></script>
+
 
 </body>
