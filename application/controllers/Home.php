@@ -25,6 +25,7 @@ class Home extends CI_Controller {
         $this->db->select('*');
         $this->db->from('facturi');
         $this->db->where('user_id', $user_id);
+        $this->db->order_by('data', 'DESC');
         $facturi = $this->db->get()->result();
 
         $now = new DateTime();
@@ -35,6 +36,9 @@ class Home extends CI_Controller {
         foreach($facturi as $factura) {
             if ($now == $factura->data) {
                 $facturi_total += $factura->suma;
+            }
+            else {
+                break;
             }
         }
 

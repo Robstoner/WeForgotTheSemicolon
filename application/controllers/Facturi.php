@@ -16,6 +16,51 @@ class Facturi extends CI_Controller
     {
         $data['active'] = 'facturi';
 
+        $user_id = $this->session->userdata('user_id');
+
+
+        $this->db->select('*');
+        $this->db->from('facturi');
+        $this->db->where('user_id', $user_id);
+        $this->db->order_by('data', 'DESC');
+        $facturi = $this->db->get()->result();
+
+        $f_gaze = 0;
+        $f_apa = 0;
+        $f_internet = 0;
+        $f_curent = 0;
+        $f_altele = 0;
+
+        $now = new DateTime();
+        $now = $now->format('Y.m');
+
+
+        foreach($facturi as $factura) {
+            if ($factura->tip == 'Gaze') {
+                $f_gaze += $factura->suma;
+            } elseif ($factura->tip == 'Apa') {
+                $f_apa += $factura->suma;
+            } elseif ($factura->tip == 'Internet') {
+                $f_internet += $factura->suma;
+            } elseif ($factura->tip == 'Curent') {
+                $f_curent += $factura->suma;
+            } elseif ($factura->tip == 'Altele') {
+                $f_altele += $factura->suma;
+            }
+
+            if ($now != $factura->data) {
+                break;
+            }
+
+        }
+
+        $data['gaze'] = $f_gaze;
+        $data['apa'] = $f_apa;
+        $data['internet'] = $f_internet;
+        $data['curent'] = $f_curent;
+        $data['altele'] = $f_altele;
+
+
         if ($this->session->userdata('logged', TRUE)) {
             $this->load->view('facturi', $data);
         } else {
