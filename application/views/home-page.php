@@ -3,8 +3,8 @@
 
 
 <div class="adaugare">
-    <a href="salariu/add">
-        <button class="btn" type="button">Adauga salariu</button>
+    <a href="<?php echo base_url() . 'login/change_sal' ; ?>">
+        <button class="btn" type="button">Schimba salariul</button>
     </a>
 </div>
 

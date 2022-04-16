@@ -2,24 +2,24 @@
 
 <div class="login-form" style="margin: 25px auto">
 
-    <form method="POST" action="<?php echo base_url() . 'consum/add_consum'; ?>">
-        <h1>Adaugare Facturi</h1>
-        <div class="content">
-            <div class="input-field">
+    <form class="d-bl" method="POST" action="<?php echo base_url() . 'consum/add_consum'; ?>">
+        <h1 class="d-bl">Adaugare Facturi</h1>
+        <div class="content d-bl">
+            <div class="input-field d-bl">
 
-                <input name="suma" type="number" step="0.01" class="form-control" placeholder="Suma platita in lei" autocomplete="nope">
+                <input name="suma" type="number" step="0.01" class="form-control d-bl" placeholder="  Suma platita in lei" autocomplete="nope">
 
             </div>
         </div>
 
 
-        <div class="action">
+        <div class="action d-bl">
 
-            <a href="<?php echo base_url() . 'Consum'; ?>">
-                <button class="btn" type="button">Inapoi la Consum</button>
+            <a class="d-bl" href="<?php echo base_url() . 'Consum'; ?>">
+                <button class="btn d-bl" type="button">Inapoi la Consum</button>
             </a>
 
-            <button class="btn" type="submit">Adaugare</button>
+            <button class="btn d-bl" type="submit">Adaugare</button>
 
         </div>
 

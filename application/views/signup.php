@@ -14,9 +14,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
     <div class="login-form" style="margin: 25px auto">
 
-        <form method="POST" action="<?php echo base_url() . 'login/signup_engine'; ?>">
-            <h1>Sign up</h1>
-            <div class="content">
+        <form class="d-bl" method="POST" action="<?php echo base_url() . 'login/signup_engine'; ?>">
+            <h1 class="d-bl">Sign up</h1>
+            <div class="content d-bl">
 
                 <?php if ($this->session->userdata('signup_failed') == TRUE) { ?>
                     <div class="alert">
@@ -25,45 +25,45 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 <?php } ?>
 
-                <div class="input-field">
+                <div class="input-field d-bl">
 
-                    <input name="username" type="text" class="form-control" placeholder="  Username" autocomplete="nope" required>
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="name" type="text" class="form-control" placeholder="  Nume" autocomplete="nope" required>
+                    <input name="username" type="text" class="form-control d-bl" placeholder="  Username" autocomplete="nope" required>
 
                 </div>
 
-                <div class="input-field">
+                <div class="input-field d-bl">
 
-                    <input name="email" type="email" class="form-control" placeholder="  Email" autocomplete="nope" required>
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="phone" type="tel" class="form-control" placeholder="  Telefon" autocomplete="nope" pattern="+[0-9]{11}" required>
+                    <input name="name" type="text" class="form-control d-bl" placeholder="  Nume" autocomplete="nope" required>
 
                 </div>
 
-                <div class="input-field">
+                <div class="input-field d-bl">
 
-                    <input name="password" type="password" class="form-control" placeholder="  Parola" autocomplete="new-password" required>
+                    <input name="email" type="email" class="form-control d-bl" placeholder="  Email" autocomplete="nope" required>
+
+                </div>
+
+                <div class="input-field d-bl">
+
+                    <input name="phone" type="tel" class="form-control d-bl" placeholder="  Telefon" autocomplete="nope" pattern="+[0-9]{11}" required>
+
+                </div>
+
+                <div class="input-field d-bl">
+
+                    <input name="password" type="password" class="form-control d-bl" placeholder="  Parola" autocomplete="new-password" required>
 
                 </div>
             </div>
 
 
-            <div class="action">
+            <div class="action d-bl">
 
-                <a href="<?php echo base_url() . 'login'; ?>">
-                    <button class="btn" type="button">Inapoi la Sign in</button>
+                <a class="d-bl" href="<?php echo base_url() . 'login'; ?>">
+                    <button class="btn d-bl" type="button">Inapoi la Sign in</button>
                 </a>
 
-                <button class="btn" type="submit">Sign up</button>
+                <button class="btn d-bl" type="submit">Sign up</button>
 
             </div>
 

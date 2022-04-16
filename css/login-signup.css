@@ -1,5 +1,6 @@
 * {
-  background-color: #333;
+  background-color: #181a1b;
+  scrollbar-color: #454a4d #202324;
   color: #fff;
 }
 
@@ -23,8 +24,12 @@ body {
   position: relative;
 }
 
+.d-bl {
+  background-color: rgb(38, 42, 43);
+}
+
 .login-form {
-  background: #333;
+  background-color: rgb(38, 42, 43);
   width: 550px;
   margin: 100px auto;
   display: -webkit-box;
@@ -33,7 +38,7 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   border-radius: 4px;
-  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 25px rgba(109, 107, 107, 0.2);
 }
 
 .login-form h1 {
@@ -57,7 +62,6 @@ body {
   font-family: 'Rubik', sans-serif;
   width: 100%;
   padding: 10px 1px;
-  
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -83,7 +87,7 @@ body {
 }
 
 .login-form .input-field input:focus {
-  border-color: rgb(244, 238, 238);
+  border-color: rgb(0, 0, 0);
 }
 
 .login-form a.link {
@@ -187,8 +191,11 @@ body {
 }
 
 input:invalid {
-  border: 2px solid rgb(94, 57, 57);
-  animation-name: shake3;
-  animation-duration: .4s;
+  border: 2px solid rgb(156, 78, 78);
+  position: relative;
+}
+
+input:valid {
+  border: 2px solid rgb(58, 55, 55);
   position: relative;
 }

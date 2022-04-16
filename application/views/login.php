@@ -14,10 +14,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
     <div class="login-form">
 
-        <form method="POST" action="<?php echo base_url() . 'login/login_engine'; ?>">
+        <form class="d-bl" method="POST" action="<?php echo base_url() . 'login/login_engine'; ?>">
 
-            <h1>Login</h1>
-            <div class="content">
+            <h1 class="d-bl">Login</h1>
+            <div class="content d-bl">
 
 
                 <?php if ($this->session->userdata('wrong_pass') == TRUE) { ?>
@@ -42,31 +42,31 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <?php } ?>
 
 
-                <div class="input-field">
+                <div class="input-field d-bl">
 
-                    <input name="username" type="text" class="form-control" placeholder="  Username" autocomplete="nope" required>
-
-                </div>
-
-                <div class="input-field">
-
-                    <input name="password" type="password" class="form-control" placeholder="  Parola" autocomplete="new-password" required>
+                    <input name="username" type="text" class="form-control d-bl" placeholder="  Username" autocomplete="nope" required>
 
                 </div>
-                <a href="<?php echo base_url() . 'login/forgot_pass'; ?>" class="link">Ai uitat parola?</a>
+
+                <div class="input-field d-bl">
+
+                    <input name="password" type="password" class="form-control d-bl" placeholder="  Parola" autocomplete="new-password" required>
+
+                </div>
+                <a class="d-bl" href="<?php echo base_url() . 'login/forgot_pass'; ?>" class="link">Ai uitat parola?</a>
             </div>
             
-            <div class="no-cont">
-                <p>Nu aveti cont?</p>
+            <div class="no-cont d-bl">
+                <p class="d-bl">Nu aveti cont?</p>
             </div>
 
-            <div class="action">
+            <div class="action d-bl">
 
-                <a href="<?php echo base_url() . 'login/signup'; ?>">
-                    <button class="btn" type="button">Register</button>
+                <a class="d-bl" href="<?php echo base_url() . 'login/signup'; ?>">
+                    <button class="btn d-bl" type="button">Register</button>
                 </a>
 
-                <button class="btn" type="submit">Sign in</button>
+                <button class="btn d-bl" type="submit">Sign in</button>
 
             </div>
 

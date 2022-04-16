@@ -93,7 +93,7 @@ class Facturi extends CI_Controller
 
             $data['active'] = 'facturi';
 
-            $this->load->view('facturi.php', $data);
+            redirect('facturi');
         }
     }
 }
